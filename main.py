@@ -13,7 +13,7 @@ if __name__ == '__main__':
         print("Validation set case")
         df = pd.read_csv("dataset/wine.csv")
         train_data, test_data = cb.train_test_split(df)
-        config = {'algorithm': 'C4.5', 'enableParallelism': enableParallelism, 'max_depth' : 3}
+        config = {'algorithm': 'C4.5', 'enableParallelism': enableParallelism}
 
         model = cb.fit(train_data, config, validation_df=test_data)
 

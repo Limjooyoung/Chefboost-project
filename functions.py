@@ -102,6 +102,7 @@ def initializeParams(config):
     config['epochs'] = epochs
     config['learning_rate'] = learning_rate
     config['max_depth'] = max_depth
+    print('깊이', max_depth)
     config['enableAdaboost'] = enableAdaboost
     config['num_of_weak_classifier'] = num_of_weak_classifier
     config['enableParallelism'] = enableParallelism
